@@ -12,3 +12,5 @@ class Solution:
                     c < 0 or c > len(image[0]) - 1 or
                     image[r][c] == color or image[r][c] != start):
                 return
+                        
+            image[r][c] = color
