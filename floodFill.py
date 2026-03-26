@@ -22,3 +22,11 @@ class Solution:
 
         dfs(sr,sc)
         return image
+
+if __name__ == "__main__":
+    sol = Solution()
+    image = [[1,1,1],[1,1,0],[1,0,1]] # Expected output: [[2,2,2],[2,2,0],[2,0,1]]
+    sr = 1
+    sc = 1
+    color = 2
+    print("Output is : ", sol.floodFill(image, sr,sc,color))
