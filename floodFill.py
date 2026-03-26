@@ -14,3 +14,6 @@ class Solution:
                 return
                         
             image[r][c] = color
+            
+            dfs(r + 1,c)
+            dfs(r - 1,c)
