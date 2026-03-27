@@ -19,3 +19,20 @@ class Solution:
             dfs(r - 1,c)
             dfs(r,c + 1)
             dfs(r,c - 1)
+
+        dfs(sr,sc)
+        return image
+
+if __name__ == "__main__":
+    sol = Solution()
+    image = [[1,1,1],[1,1,0],[1,0,1]] # Expected output: [[2,2,2],[2,2,0],[2,0,1]]
+    sr = 1
+    sc = 1
+    color = 2
+    print("Output is : ", sol.floodFill(image, sr,sc,color))
+    
+    image2 = [[0,0,0],[0,0,0]] # Expected output: [[0,0,0],[0,0,0]]
+    sr2 = 0
+    sc2 = 0
+    color2 = 0
+    print("Output is : ", sol.floodFill(image2, sr2,sc2,color2))
