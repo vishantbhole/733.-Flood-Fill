@@ -30,3 +30,9 @@ if __name__ == "__main__":
     sc = 1
     color = 2
     print("Output is : ", sol.floodFill(image, sr,sc,color))
+    
+    image2 = [[0,0,0],[0,0,0]] # Expected output: [[0,0,0],[0,0,0]]
+    sr2 = 0
+    sc2 = 0
+    color2 = 0
+    print("Output is : ", sol.floodFill(image2, sr2,sc2,color2))
